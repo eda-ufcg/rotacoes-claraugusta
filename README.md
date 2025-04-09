@@ -1,8 +1,8 @@
 # Identificação
 
-* Nome: 
-* Email (@ccc): 
-* Matrícula: 
+* Nome: Maria Clara Augusta Santos
+* Email (@ccc): maria.clara.augusta.santos@ccc.ufcg.edu.br
+* Matrícula: 123210361
 
 # Roteiro: isAVL
 
