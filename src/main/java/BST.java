@@ -8,7 +8,18 @@ public class BST {
     private int size;
 
     public boolean isAVL() {
-        return Math.abs(balance(this.root)) <= 1;
+        if(this.root == null)   return true;
+        return isAVL(this.root);
+    }
+
+    private boolean isAVL(Node node){
+        if (Math.abs(balance(this.root)) > 1) return false;
+        else if (node.hasOnlyLeftChild()) return isAVL(node.left);
+        else if (node.hasOnlyRightChild()) return isAVL(node.right);
+        else if (node.left != null && node.right != null) {
+            return isAVL(node.left) && isAVL(node.right);
+        }
+        return true;
     }
 
     /**
